@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+    <changeSet author="Ivan (generated)" id="1554921313117-1">
+        <createTable catalogName="de9peoph5vmgfs" schemaName="public" tableName="tasks">
+            <column name="uuid" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="VARCHAR(255)"/>
+            <column name="updated" type="TIMESTAMPTZ"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Ivan (generated)" id="1554921313117-2">
+        <addPrimaryKey catalogName="de9peoph5vmgfs" columnNames="uuid" constraintName="tasks_pkey" schemaName="public" tableName="tasks"/>
+    </changeSet>
+</databaseChangeLog>
